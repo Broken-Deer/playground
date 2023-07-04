@@ -711,6 +711,7 @@ dependencies = [
 [[package]]
 name = "mgl_core"
 version = "0.1.0"
+source = "git+https://github.com/Broken-Deer/magical-launcher-core.git#fa8589392004d0a603ca75c995f5ba32bf6d839a"
 dependencies = [
  "deflate",
  "futures",
