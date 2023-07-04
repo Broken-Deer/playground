@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 zip = "0.6.6"
 sha1 = "0.6"
-mgl_core = { path = "../magical-launcher-core" }
+mgl_core = { git = "https://github.com/Broken-Deer/magical-launcher-core.git" }
 tokio = { version = "1", features = ["full"] }
