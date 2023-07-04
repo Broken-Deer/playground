@@ -1,0 +1,12 @@
+[package]
+name = "brokendeer-playground"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+zip = "0.6.6"
+sha1 = "0.6"
+mgl_core = { path = "../magical-launcher-core" }
+tokio = { version = "1", features = ["full"] }
