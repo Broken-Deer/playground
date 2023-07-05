@@ -17,8 +17,9 @@ use mgl_core::core::{folder::MinecraftLocation, task::EventListeners};
 
 #[tokio::main]
 async fn main() {
-    let listeners = EventListeners::new().on_progress(Box::new(|a, b, c| {
-        println!("progress: {a}/{b}  step: {c}");
-    }));
-    mgl_core::installer::install("1.19.4", MinecraftLocation::new("test"), listeners).await;
+    // let listeners = EventListeners::new().on_progress(Box::new(|a, b, c| {
+    //     println!("progress: {a}/{b}  step: {c}");
+    // }));
+    // mgl_core::installer::install("1.19.4", MinecraftLocation::new("test"), listeners).await;
+    println!("Hello, world!");
 }
