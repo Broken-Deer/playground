@@ -13,10 +13,8 @@
 //     println!("{}", output);
 // }
 
-use mgl_core::core::{folder::MinecraftLocation, task::EventListeners};
 
-#[tokio::main]
-async fn main() {
+fn main() {
     // let listeners = EventListeners::new().on_progress(Box::new(|a, b, c| {
     //     println!("progress: {a}/{b}  step: {c}");
     // }));

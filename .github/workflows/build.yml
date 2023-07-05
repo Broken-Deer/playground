@@ -35,10 +35,8 @@ jobs:
   release:
     runs-on: windows-latest
     steps:
+    - uses: actions/checkout@v3
     - name: Checkout
-      uses: actions/checkout@v3
-
-    - name: Build
       run: cargo build --release
 
     - name: Create Release and Upload Release Asset
