@@ -42,7 +42,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v1
       with:
+        release_tags: "v1.0.0"
         files: |
           target/release/hello.exe
-        tag: ${{ github.ref }}
         
