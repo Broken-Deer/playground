@@ -2,10 +2,10 @@ use regex::Regex;
 use tokio::process::Command;
 #[tokio::main]
 async fn main() {
-    let  mut command = Command::new("C:\\Windows\\System32\\cmd.exe");
+    let mut command = Command::new("C:\\Windows\\System32\\cmd.exe");
     command.args(&["/C", "ver"]);
     let output = command.output().await.unwrap();
-    let stdout = String::from_utf8(output.stdout).unwrap();
+    let stdout = unsafe { String::from_utf8_unchecked(output.stdout) };
     println!("{}", &stdout);
     let regex = Regex::new(r"\S*.\]").unwrap();
     let mut output = regex.find(&stdout).unwrap().as_str().to_string();
