@@ -3,7 +3,7 @@ use tokio::process::Command;
 #[tokio::main]
 async fn main() {
     let  mut command = Command::new("C:\\Windows\\System32\\cmd.exe");
-    command.args(&["/C", "powershell -c ver"]);
+    command.args(&["/C", "powershell -c Get-ComputerInfo | select WindowsProductName, WindowsVersion, OsHardwareAbstractionLayer"]);
     let output = command.output().await.unwrap();
     let stdout = String::from_utf8(output.stdout).unwrap();
     let stderr = String::from_utf8(output.stderr).unwrap();
