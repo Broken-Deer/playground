@@ -39,15 +39,12 @@ jobs:
     - name: Build
       run: cargo build --release
 
-    - name: Test
-      run: cd target/release/build && dir
-
-    # - name: Release
-    #   uses: softprops/action-gh-release@v1
-    #   with:
-    #     tag_name: "v1.0.0"
-    #     prerelease: true
-    #     # token: ${{ secrets.GITHUB_TOKEN }}
-    #     files: |
-    #       D:/a/playground/playground/target/release/hello.exe
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: "v1.0.0"
+        prerelease: true
+        # token: ${{ secrets.GITHUB_TOKEN }}
+        files: |
+          target/release/brokendeer-playground.exe
         
