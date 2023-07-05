@@ -46,5 +46,5 @@ jobs:
         prerelease: true
         # token: ${{ secrets.GITHUB_TOKEN }}
         files: |
-          target/release/hello.exe
+          D:/a/playground/playground/target/release/hello.exe
         
