@@ -39,12 +39,21 @@ jobs:
     - name: Build
       run: cargo build --release
 
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: "v1.0.0"
-        prerelease: true
-        # token: ${{ secrets.GITHUB_TOKEN }}
-        files: |
-          D:/a/playground/playground/target/release/hello.exe
+    - name: Test
+      run: cd target
+
+    - name: Test2
+      run: cd release
+
+    - name: Test3
+      run: dir
+
+    # - name: Release
+    #   uses: softprops/action-gh-release@v1
+    #   with:
+    #     tag_name: "v1.0.0"
+    #     prerelease: true
+    #     # token: ${{ secrets.GITHUB_TOKEN }}
+    #     files: |
+    #       D:/a/playground/playground/target/release/hello.exe
         
