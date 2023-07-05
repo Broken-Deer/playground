@@ -44,3 +44,5 @@ jobs:
       with:
         files: |
           target/release/hello.exe
+        tag: ${{ github.ref }}
+        
