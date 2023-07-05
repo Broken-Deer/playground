@@ -10,4 +10,4 @@ edition = "2021"
 # sha1 = "0.6"
 # mgl_core = { git = "https://github.com/Broken-Deer/magical-launcher-core.git" }
 # tokio = { version = "1", features = ["full"] }
-os_info = { version = "3", default-features = false }
+# os_info = { version = "3", default-features = false }
