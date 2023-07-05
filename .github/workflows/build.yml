@@ -29,6 +29,8 @@ name: Rust Release
 on:
   push:
     branches: [ "master" ]
+permissions:
+  contents: write
 jobs:
   release:
     runs-on: windows-latest
@@ -50,7 +52,6 @@ jobs:
         prerelease: false
         files: |
           target/release/brokendeer-playground.exe
-          LICENSE 
     # - name: 创建GitHub Release
     #   id: create_release
     #   uses: actions/create-release@latest
