@@ -40,13 +40,7 @@ jobs:
       run: cargo build --release
 
     - name: Test
-      run: cd target
-
-    - name: Test2
-      run: cd release
-
-    - name: Test3
-      run: dir
+      run: tree target
 
     # - name: Release
     #   uses: softprops/action-gh-release@v1
