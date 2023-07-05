@@ -96,6 +96,7 @@ name = "brokendeer-playground"
 version = "0.1.0"
 dependencies = [
  "mgl_core",
+ "regex",
  "tokio",
 ]
 
