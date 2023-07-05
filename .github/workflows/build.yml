@@ -44,7 +44,7 @@ jobs:
       with:
         tag_name: "v1.0.0"
         prerelease: true
-        token: ${{ secrets.GITHUB_TOKEN }}
+        # token: ${{ secrets.GITHUB_TOKEN }}
         files: |
           target/release/hello.exe
         
